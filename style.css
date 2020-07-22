@@ -1,0 +1,108 @@
+/* -------------------- Common Styles -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*, 
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-header: #131313;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ----------------- Header Section ----------------- */
+.header {
+    background-color: var(--color-header);
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+}
+
+.header-link {
+    color: rgba(255,255,255, 0.7);
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.header-link i {
+    margin-left: 1rem;
+    color: rgba(255,255,255, 0.7);
+    font-size: 1.8rem;
+}
+
+.active {
+    color: white;
+    font-weight: 700;
+}
+
+/* ----------------- Navbar Section ----------------- */
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    box-shadow: 0 0 4rem rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo-box {
+    width: 9rem;
+    height: auto;
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-item {
+    margin-top: 1rem;
+}
+
+.navbar-link {
+    color: rgba(0,0,0,0.4);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.navbar-link:hover {
+    color: rgba(0,0,0,0.7);
+}
+
+.search-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-left: 2px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+}
+
+.search-btn i {
+    color: rgba(0,0,0,0.4);
+    font-size: 2rem;
+    transition: all 0.4s;
+}
+
+.search-btn i:hover {
+    color: rgba(0,0,0,0.7);
+}
