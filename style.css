@@ -106,3 +106,32 @@ body {
 .search-btn i:hover {
     color: rgba(0,0,0,0.7);
 }
+
+.menu-btn {
+    display: none;
+}
+
+/*----------------------------------Mediaqueries------------------------*/
+
+
+@media screen and (max-width: 425px) {
+    .header{
+        display: none;
+    }
+    .navbar-item {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+        padding: 1rem 2rem;
+        border: none;
+        border-left: 2px solid rgba(0,0,0,0.1);
+        background-color: transparent;
+    }
+    
+    .menu-btn i {
+        color: rgba(226, 36, 36, 0.856);
+        font-size: 2rem;
+        transition: all 0.4s;
+    }
+}
