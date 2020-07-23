@@ -16,6 +16,7 @@ html {
 :root {
     --color-header: #131313;
     --color-orange-light: #ffece8;
+    --color-orange-lighter:#fffaf7;
 }
 
 body {
@@ -374,9 +375,15 @@ body {
     position: relative;
 }
 
-.news h2 i, .rounds-title h2 i {
+.news h2 i {
     position: absolute;
-    right: -3rem;
+    top: 0.6rem;
+    left: 18rem;
+}
+
+.rounds-title h2 i {
+    position: absolute;
+    left: 50rem;
     top: 0.6rem;
 }
 
@@ -433,7 +440,7 @@ body {
 .rounds-container {
     flex-wrap: wrap;
     justify-content: center;
-    width: 74%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -454,8 +461,8 @@ body {
 }
 
 .single-round {
-    width: 20%;
-    margin: 0.6rem;
+    width: 23%;
+    margin: 0.4rem;
     padding: 1.5rem;
 }
 
@@ -500,7 +507,7 @@ body {
     position: absolute;
     top: 0.9rem;
     left: 8.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
     font-weight: 900;
 }
@@ -515,6 +522,7 @@ body {
 .round-content {
     padding: 1.5rem;
     font-size: 1.6rem;
+    background-color: var(--color-orange-lighter);
 }
 
 .round-content-top p {
@@ -541,6 +549,7 @@ body {
     background-color: orangered;
 }
 
+
 .round-content-bottom p {
     color: rgba(0,0,0,0.6);
     font-size: 1.4rem;
@@ -552,6 +561,39 @@ body {
 }
 
 /* ----------------- Media Querie ----------------- */
+
+@media only screen and (max-width: 1590px) {
+
+    .rounds-title {
+        flex-direction: column;
+        margin-left: 5.5%;
+    }
+
+    .rounds-links {
+        width: 100%;
+        margin-left: -4.3rem;
+    }
+
+    .rounds-container {
+        width: 100%;
+    }
+
+
+    .single-round {
+        width: 30%;
+        margin: 0.2rem;
+    }
+
+    
+    .hidding {
+        display: none;
+    }
+
+
+}
+
+
+
 @media only screen and (min-width: 1200px) {
     .navbar-nav > * {
       padding: 0 2rem !important;
@@ -602,6 +644,8 @@ body {
         margin-left: 0;
     }
 
+    
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -628,6 +672,35 @@ body {
         grid-row: 2 / 3;
     }
 
+    /*--------------------------*/
+   
+
+}
+
+
+@media only screen and (max-width: 828px) {
+   
+    .rounds-title h2 i {
+        top: 4.3rem;
+        left: 12rem
+    }
+
+    .rounds-links {
+        flex-direction: column;
+
+    }
+
+    .rounds-links a {
+        padding-bottom: 1rem;
+    }
+
+    .rounds-links a:not(:last-child) {
+        border-right: 1px solid transparent;
+    }
+
+    .single-round {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
