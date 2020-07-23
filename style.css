@@ -15,6 +15,7 @@ html {
 
 :root {
     --color-header: #131313;
+    --color-orange-light: #ffece8;
 }
 
 body {
@@ -358,17 +359,22 @@ body {
     flex-direction: column;
 }
 
-.news h2 {
+.news-title, .rounds-title {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.news h2, .rounds-title h2 {
     font-size: 3rem;
     font-weight: 900;
     color: orangered;
-    margin-left: 20%;
     margin-bottom: 2rem;
     align-self: flex-start;
     position: relative;
 }
 
-.news h2 i {
+.news h2 i, .rounds-title h2 i {
     position: absolute;
     right: -3rem;
     top: 0.6rem;
@@ -421,6 +427,128 @@ body {
     font-weight: 700;
     color: rgba(0,0,0,0.2);
     margin: 1rem 0;
+}
+
+/* ----------------- Rounds Section ------------------ */
+.rounds-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 74%;
+    margin: 0 auto;
+}
+
+.rounds-title {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rounds-links a {
+    color: orangered;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    text-decoration: none;
+}
+
+.rounds-links a:not(:last-child) {
+    border-right: 1px solid orangered;
+}
+
+.single-round {
+    width: 20%;
+    margin: 0.6rem;
+    padding: 1.5rem;
+}
+
+.round-top {
+    position: relative;
+}
+
+.round-top-first {
+    width: 100%;
+    height: 4.5rem;
+    background-color: orangered;
+    position: relative;
+    z-index: 1;
+}
+
+.round-top-second {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--color-orange-light);
+    position: relative;
+    z-index: 1;
+}
+
+.round-top-second h4 {
+    position: absolute;
+    top: 2rem;
+    left: 8.5rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.round-top-second p {
+    position: absolute;
+    top: 4.5rem;
+    left: 8.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.4);
+}
+
+.round-top-first h3 {
+    position: absolute;
+    top: 0.9rem;
+    left: 8.5rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 900;
+}
+
+.round-top img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.round-content {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.round-content-top p {
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 1.5rem;
+}
+
+.round-content-top p i {
+    margin-right: 1rem;
+}
+
+.round-content-top {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.round-content-top:before {
+    content: "";
+    width: 110%;
+    height: 1px;
+    position: absolute;
+    left: -0.7rem;
+    bottom: -2rem;
+    background-color: orangered;
+}
+
+.round-content-bottom p {
+    color: rgba(0,0,0,0.6);
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.round-content-bottom p span {
+    color: rgba(0,0,0,0.4);
 }
 
 /* ----------------- Media Querie ----------------- */
