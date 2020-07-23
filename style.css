@@ -57,9 +57,17 @@ body {
     height: 5rem;
     justify-content: space-between;
     box-shadow: 0 0 4rem rgba(0,0,0,0.3);
-    position: sticky;
+    position: sticky; /**/
     top: 0;
     left: 0;
+    z-index: 100;
+}
+
+.navbar-nav {
+    height: 100%;
+    align-items: center;
+    align-self: stretch;
+    text-transform: uppercase;
 }
 
 .logo-box {
@@ -73,21 +81,18 @@ body {
     object-fit: cover;
 }
 
-.navbar-item {
-    margin-top: 1rem;
-}
-
-.navbar-link {
+.navbar-nav__link:link,
+.navbar-nav__link:visited {
     color: rgba(0,0,0,0.4);
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     transition: all 0.4s;
 }
 
-.navbar-link:hover {
-    color: rgba(0,0,0,0.7);
+.navbar-nav__link:hover {
+    color: rgba(0,0,0,0.7) !important;
 }
 
 .search-btn {
@@ -106,14 +111,195 @@ body {
 .search-btn i:hover {
     color: rgba(0,0,0,0.7);
 }
-
+/*
 .menu-btn {
     display: none;
+}*/
+
+/* ---------------- Toggle Button ----------------- */
+.toggle {
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: stretch;
+    height: 3rem;
+    width: 3.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 400;
+    cursor: pointer;
 }
 
-/*----------------------------------Mediaqueries------------------------*/
+.toggle > * {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.toggle__button {
+    position: fixed;
+    top: 0.5rem;
+    right: 2rem;
+    cursor: pointer;
+    text-align: center;
+    z-index: 600;
+}
+
+.toggle__checkbox {
+    display: none;
+    visibility: hidden;
+}
+
+.toggle__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.toggle__link {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 2.8rem 0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.toggle__link:hover {
+    z-index: 400;
+    width: 100%;
+    color: rgba(0,0,0,0.7) !important;
+}
+
+.toggle__background {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.toggle__checkbox:checked ~ .toggle__background {
+    transform: scale(80);
+}
+
+.toggle__checkbox:checked ~ .toggle__nav {
+    opacity: 1;
+    width: 70%;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+.toggle__icon {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.toggle__icon,
+.toggle__icon:before,
+.toggle__icon:after {
+      width: 3rem;
+      height: 2px;
+      background-color: rgba(0,0,0,0.6);
+      display: inline-block;
+}
+
+.toggle__icon:before,
+.toggle__icon:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.3s;
+}
+
+.toggle__icon:before {
+    top: -0.8rem;
+}
+
+.toggle__icon:after {
+    top: 0.8rem;
+}
+
+.toggle__checkbox:checked ~ .toggle__button .toggle__icon {
+    background-color: transparent;
+}
+
+.toggle__checkbox:checked ~ .toggle__button .toggle__icon:before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.toggle__checkbox:checked ~ .toggle__button .toggle__icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+/* ----------------- Media Querie ----------------- */
+@media only screen and (min-width: 1200px) {
+    .navbar-nav > * {
+      padding: 0 2rem !important;
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s;
+    }
+
+    
+    .navbar-nav__nav-item {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-nav__link:link,
+    .navbar-nav__link:visited {
+        color: rgba(0,0,0,0.4);
+        text-decoration: none;
+    }
+
+    .navbar-nav__toggle {
+        display: none;
+    }
+}
+ 
+@media only screen and (max-width: 1200px) {
+    .navbar-nav__nav-item {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .navbar-right {
+        margin-right: 7rem;
+    }
+
+    .search-btn {
+        border-right: 2px solid rgba(0,0,0,0.1);
+    }
+}
 
 
+
+
+/*-------------------------------------------*/
+/*
 @media screen and (max-width: 425px) {
     .header{
         display: none;
@@ -134,4 +320,4 @@ body {
         font-size: 2rem;
         transition: all 0.4s;
     }
-}
+} */

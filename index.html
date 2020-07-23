@@ -25,22 +25,38 @@
             <div class="header-item"><a href="#" class="header-link">Contact</a></div>
         </div>
     </header>
-    <nav class="navbar flex">
+    <div class="navbar flex">
         <div class="navbar-left flex">
             <div class="logo-box">
                 <img src="./img/logo.jpg" alt="logo">
             </div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Latest</a></div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Hard Fork</a></div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Plugged</a></div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Readme</a></div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Growth Quarters</a></div>
-            <div class="navbar-item"><a href="#" class="navbar-link">Neutral</a></div>
+            <nav class="navbar-nav flex">
+                <div class="navbar-nav__toggle">
+                    <button class="toggle flex">
+                        <input type="checkbox" class="toggle__checkbox" id="nav-toggle" />
+                        <label for="nav-toggle" class="toggle__button">
+                            <span class="toggle__icon">
+                        </label>
+                        <div class="toggle__background"></div>
+                        <nav class="toggle__nav">
+                            <div class="toggle__link">Latest</div>
+                            <div class="toggle__link">Hard Fork</div>
+                            <div class="toggle__link">Latest</div>
+                            <div class="toggle__link">Hard Fork</div>
+                        </nav>
+                    </button>
+                </div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Latest</a></div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Hard Fork</a></div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Plugged</a></div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Readme</a></div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Growth Quarters</a></div>
+                <div class="navbar-nav__nav-item"><a href="#" class="navbar-nav__link">Neutral</a></div>
+            </nav>
         </div>
         <div class="navbar-right flex">
             <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
-            <button type="button" class="menu-btn"><i class="fas fa-bars"></i></button>
         </div>
-    </nav>
+    </div>
 </body>
 </html>
