@@ -10,12 +10,13 @@
 - HTML and CSS3.
 - Using UX.
 - Using floats and flexbox.
+- Using mediaqueris for Responsive Design.
 - Using StyleLinters.
 - W3 HTML Validation Service.
 
 ## 🔴 Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Ceci007/Design-Teardown/tree/feature-branch)
+[Live Demo Link](https://raw.githack.com/diazgio/The-Next-Web-project/feature-branch/index.html)
 
 
 ## 🛠 Getting Started
