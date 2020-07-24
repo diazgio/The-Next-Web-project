@@ -782,13 +782,19 @@ body {
 }
 
 .latest-title {
-    margin-bottom: 4rem;
+    margin-bottom: -1rem;
 }
 
 .single-latest h3 {
     margin: 1rem 0;
+}
+
+.single-latest a {
     font-size: 1.6rem;
     font-weight: 900;
+    transition: all 0.4s;
+    text-decoration: none;
+    color: black;
 }
 
 .single-latest p {
@@ -802,6 +808,12 @@ body {
     margin-right: 1rem;
     text-decoration: line-through;
     font-weight: 700;
+}
+
+.single-latest a:hover {
+    cursor: pointer;
+    color: orangered;
+    text-decoration: underline;
 }
 
 /* ----------------- Media Queries ----------------- */
