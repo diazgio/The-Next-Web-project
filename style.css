@@ -60,7 +60,7 @@ body {
   height: 5rem;
   justify-content: space-between;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
-  position: sticky; /*  */
+  position: sticky; 
   top: 0;
   left: 0;
   z-index: 100;
@@ -94,10 +94,6 @@ body {
   transition: all 0.4s;
 }
 
-.navbar-nav__link:hover {
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-
 .search-btn {
   padding: 1rem 2rem;
   border: none;
@@ -110,15 +106,6 @@ body {
   font-size: 2rem;
   transition: all 0.4s;
 }
-
-.search-btn i:hover {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-/*
-.menu-btn {
-    display: none;
-} */
 
 /* ---------------- Toggle Button ----------------- */
 .toggle {
@@ -181,12 +168,6 @@ body {
   padding: 2.8rem 0;
   width: 100%;
   transition: all 0.3s ease;
-}
-
-.toggle__link:hover {
-  z-index: 400;
-  width: 100%;
-  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .toggle__background {
@@ -307,6 +288,8 @@ body {
 .header-text h3 {
   color: white;
   margin-bottom: 0.5rem;
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 .header-text p,
@@ -314,11 +297,6 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
   color: white;
-}
-
-.header-text h3 {
-  font-size: 5rem;
-  font-weight: 900;
 }
 
 .header-icons p {
@@ -333,18 +311,10 @@ body {
   text-transform: capitalize;
 }
 
-.header-icons a:hover {
-  color: white;
-}
-
 .header-text-small {
   position: absolute;
   left: 2rem;
   bottom: 2rem;
-}
-
-{
-
 }
 
 .header-text-small h3 {
@@ -384,6 +354,12 @@ body {
   position: relative;
 }
 
+.li-left i {
+  margin-top: 1rem;
+  font-size: 0.5rem;
+  color: orangered;
+}
+
 .news h2 i,
 .popular-title h2 i,
 .latest-title h2 i {
@@ -410,11 +386,6 @@ body {
   text-decoration: none;
   color: black;
   transition: all 0.4s;
-}
-
-.single-news a:hover {
-  text-decoration: underline;
-  color: orangered;
 }
 
 .news-img-box {
@@ -471,6 +442,18 @@ body {
   padding: 0 2rem;
   text-decoration: none;
   margin-top: 4rem;
+}
+
+.popular-list li a {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.li-right a {
+  font-size: 1.4rem !important;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .rounds-links a:not(:last-child) {
@@ -591,12 +574,12 @@ body {
   justify-content: center;
 }
 
-.single-popular:not(:last-child) {
-  margin-right: 3rem;
+.single-popular {
+    width: 36rem;
 }
 
-.single-popular {
-  width: 36rem;
+.single-popular:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .popular-top {
@@ -668,10 +651,6 @@ body {
   font-weight: 700;
 }
 
-.popular-middle {
-  background-color: var(--color-orange-lighter);
-}
-
 .popular-middle-left {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -694,6 +673,7 @@ body {
 
 .popular-middle {
   justify-content: space-between;
+  background-color: var(--color-orange-lighter);
 }
 
 .popular-list {
@@ -707,13 +687,6 @@ body {
   float: right;
 }
 
-.popular-list li a {
-  font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 1.8;
-  text-decoration: none;
-}
-
 .li-container {
   justify-content: space-between;
   position: relative;
@@ -723,19 +696,8 @@ body {
   margin-right: 1rem;
 }
 
-.li-left i {
-  margin-top: 1rem;
-  font-size: 0.5rem;
-  color: orangered;
-}
-
 .li-right {
   margin-right: 1.5rem;
-}
-
-.li-right a {
-  font-size: 1.4rem !important;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 .li-container::before {
@@ -822,12 +784,6 @@ body {
   font-weight: 700;
 }
 
-.single-latest a:hover {
-  cursor: pointer;
-  color: orangered;
-  text-decoration: underline;
-}
-
 /* --------------------Footer------------------------- */
 
 .footer-top {
@@ -862,10 +818,6 @@ body {
   z-index: 3;
 }
 
-.footer-icons i:hover::after {
-  cursor: pointer;
-}
-
 .footer-bottom {
   background-color: black;
   padding: 3.9rem 0;
@@ -898,8 +850,43 @@ body {
   font-size: 1.2rem;
 }
 
+/* ----------------- Hover Styles ----------------- */
+
+.navbar-nav__link:hover {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
 .footer-links a:hover {
-  color: white;
+    color: white;
+}
+
+.footer-icons i:hover::after {
+    cursor: pointer;
+}
+
+.single-latest a:hover {
+    cursor: pointer;
+    color: orangered;
+    text-decoration: underline;
+}
+
+.single-news a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+.header-icons a:hover {
+    color: white;
+}
+
+.toggle__link:hover {
+    z-index: 400;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.search-btn i:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* ----------------- Media Queries ----------------- */
