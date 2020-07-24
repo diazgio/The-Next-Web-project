@@ -600,6 +600,35 @@ body {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/satoshi.PNG");
 }
 
+.img-popular-2 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/Twitter-red-hed-2020-by-Twitter-v2-796x419.jpg");
+}
+
+.img-popular-3 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/mouse.PNG");
+}
+
+.img-popular-4 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/perfect.PNG");
+}
+
+.img-popular-5 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/graphic-designer.PNG");
+}
+
+.img-popular-6 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/latin-america.PNG");
+}
+
+.img-popular-8 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/BMW-ix3-unveiling-car-future-bavarian-motor-ev-electric-796x448.png");
+}
+
+.img-popular-9 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/Legend-of-Korra-796x417.jpg");
+}
+
+
 .popular-absolute-bottom {
     position: absolute;
     left: 1rem;
