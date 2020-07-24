@@ -60,7 +60,7 @@ body {
   height: 5rem;
   justify-content: space-between;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
-  position: sticky; 
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
@@ -360,6 +360,14 @@ body {
   color: orangered;
 }
 
+.footer-icons i {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
 .news h2 i,
 .popular-title h2 i,
 .latest-title h2 i {
@@ -444,16 +452,43 @@ body {
   margin-top: 4rem;
 }
 
+.li-right a {
+  font-size: 1.4rem !important;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.footer-bottom a {
+  margin-left: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.latest-title a {
+  font-size: 2rem;
+  color: orangered;
+  text-decoration: none;
+}
+
+.single-latest a {
+  font-size: 1.6rem;
+  font-weight: 900;
+  transition: all 0.4s;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+}
+
 .popular-list li a {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.7);
   line-height: 1.8;
   text-decoration: none;
-}
-
-.li-right a {
-  font-size: 1.4rem !important;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 .rounds-links a:not(:last-child) {
@@ -575,7 +610,7 @@ body {
 }
 
 .single-popular {
-    width: 36rem;
+  width: 36rem;
 }
 
 .single-popular:not(:last-child) {
@@ -749,26 +784,12 @@ body {
   object-fit: cover;
 }
 
-.latest-title a {
-  font-size: 2rem;
-  color: orangered;
-  text-decoration: none;
-}
-
 .latest-title {
   margin-bottom: -1rem;
 }
 
 .single-latest h3 {
   margin: 1rem 0;
-}
-
-.single-latest a {
-  font-size: 1.6rem;
-  font-weight: 900;
-  transition: all 0.4s;
-  text-decoration: none;
-  color: black;
 }
 
 .single-latest p {
@@ -794,14 +815,6 @@ body {
 .footer-icons {
   justify-content: center;
   align-items: center;
-}
-
-.footer-icons i {
-  color: white;
-  font-size: 2rem;
-  padding: 2rem;
-  position: relative;
-  z-index: 10;
 }
 
 .footer-icons i::after {
@@ -831,62 +844,49 @@ body {
   margin-left: 0.5rem;
 }
 
-.footer-bottom a {
-  margin-left: 0.5rem;
-  color: white;
-  text-decoration: none;
-}
-
 .footer-links {
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 0 1.2rem;
-  font-size: 1.2rem;
-}
-
 /* ----------------- Hover Styles ----------------- */
 
 .navbar-nav__link:hover {
-    color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .footer-links a:hover {
-    color: white;
+  color: white;
 }
 
 .footer-icons i:hover::after {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .single-latest a:hover {
-    cursor: pointer;
-    color: orangered;
-    text-decoration: underline;
+  cursor: pointer;
+  color: orangered;
+  text-decoration: underline;
 }
 
 .single-news a:hover {
-    text-decoration: underline;
-    color: orangered;
+  text-decoration: underline;
+  color: orangered;
 }
 
 .header-icons a:hover {
-    color: white;
+  color: white;
 }
 
 .toggle__link:hover {
-    z-index: 400;
-    width: 100%;
-    color: rgba(0, 0, 0, 0.7) !important;
+  z-index: 400;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .search-btn i:hover {
-    color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* ----------------- Media Queries ----------------- */
@@ -911,7 +911,6 @@ body {
     margin: 0.2rem;
   }
 
-
   .hidding {
     display: none;
   }
@@ -926,7 +925,6 @@ body {
     align-items: center;
     transition: all 0.3s;
   }
-
 
   .navbar-nav__nav-item {
     display: flex;
