@@ -366,7 +366,7 @@ body {
     margin: 0 auto;
 }
 
-.news h2, .rounds-title h2 {
+.news h2, .rounds-title h2, .popular-title h2 {
     font-size: 3rem;
     font-weight: 900;
     color: orangered;
@@ -375,16 +375,9 @@ body {
     position: relative;
 }
 
-.news h2 i {
-    position: absolute;
-    top: 0.6rem;
-    left: 18rem;
-}
-
-.rounds-title h2 i {
-    position: absolute;
-    left: 50rem;
-    top: 0.6rem;
+.news h2 i, .popular-title h2 i {
+   margin-top: 0.7rem;
+   margin-left: 1rem;
 }
 
 .news-top {
@@ -446,7 +439,18 @@ body {
 
 .rounds-title {
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.rounds-title h2 {
+    margin: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+.rounds-title h2 i {
+    margin-top: 0;
+    margin-left: 1rem;
 }
 
 .rounds-links a {
@@ -454,6 +458,7 @@ body {
     font-size: 1.6rem;
     padding: 0 2rem;
     text-decoration: none;
+    margin-top: 4rem;
 }
 
 .rounds-links a:not(:last-child) {
@@ -560,7 +565,149 @@ body {
     color: rgba(0,0,0,0.4);
 }
 
-/* ----------------- Media Querie ----------------- */
+/* ----------------- Popular Section ----------------- */
+.most-popular-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.most-popular-1, .most-popular-2, .most-popular-3 {
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.single-popular:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.single-popular {
+    width: 36rem;
+}
+
+.popular-top {
+    position: relative;
+}
+
+.popular-img-box {
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+}
+
+.img-popular-1 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/satoshi.PNG");
+}
+
+.popular-absolute-bottom {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.popular-absolute-bottom h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.popular-absolute-bottom h4 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    width: 80%;
+}
+
+.popular-absolute-bottom p {
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.6);
+    font-weight: 700;
+}
+
+.popular-middle {
+    background-color: var(--color-orange-lighter);
+}
+
+.popular-middle-left {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.popular-middle h3 {
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.popular-middle p {
+    color: orangered;
+    font-size: 1.4rem;
+    font-weight: 900;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.popular-middle {
+    justify-content: space-between;
+}
+
+.popular-list {
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.popular-list li {
+    margin: 1rem 0;
+    float: right;
+}
+
+.popular-list li a {
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.7);
+    line-height: 1.8;
+    text-decoration: none;
+}
+
+.li-container {
+    justify-content: space-between;
+    position: relative;
+}
+
+.li-left {
+    margin-right: 1rem;
+}
+
+.li-left i {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    color: orangered;
+}
+
+.li-right {
+    margin-right: 1.5rem;
+}
+
+.li-right a {
+    font-size: 1.4rem !important;
+    color: rgba(0,0,0,0.4);
+}
+
+.li-container:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+}
+
+/* ----------------- Media Queries ----------------- */
 
 @media only screen and (max-width: 1590px) {
 
@@ -571,7 +718,7 @@ body {
 
     .rounds-links {
         width: 100%;
-        margin-left: -4.3rem;
+        margin-left: -2rem;
     }
 
     .rounds-container {
@@ -643,12 +790,13 @@ body {
         align-self: center;
         margin-left: 0;
     }
-
-    
-
 }
 
 @media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+
     .grid-header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -670,24 +818,14 @@ body {
     .grid-header-3 {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-    }
-
-    /*--------------------------*/
-   
+    }   
 
 }
 
 
 @media only screen and (max-width: 828px) {
-   
-    .rounds-title h2 i {
-        top: 4.3rem;
-        left: 12rem
-    }
-
     .rounds-links {
         flex-direction: column;
-
     }
 
     .rounds-links a {
@@ -700,6 +838,10 @@ body {
 
     .single-round {
         width: 100%;
+    }
+
+    .single-popular {
+        width: 90%;
     }
 }
 
@@ -745,6 +887,5 @@ body {
     .single-news p {
         font-size: 1.4rem;
     }
-    
 }
 
