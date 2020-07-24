@@ -2,7 +2,7 @@
 
 > This is the fifth collaborative project from Microverse program, It's a mock-up of a Design Teardown of Smashing Magazine , it's built on HTML and CSS3 languages.
 
-![screenshot](./img/app_screenshot.png)
+![screenshot](./img/screen-shot.PNG)
 
 
 ## 🔧 Built With
