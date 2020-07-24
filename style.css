@@ -235,6 +235,11 @@ body {
 
 /* -------------------Main--------------------------------- */
 
+.main {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .grid-header {
   display: grid;
   grid-template-columns: 65% 1fr;
@@ -324,10 +329,8 @@ body {
 
 /* -------------------- News Section -------------------- */
 .news {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 6rem 0;
+  margin: 0 auto;
 }
 
 .news-container {
@@ -335,11 +338,10 @@ body {
 }
 
 .news-title,
-.rounds-title,
-.latest-title {
-  width: 60%;
+.rounds-title {
   display: flex;
   margin: 0 auto;
+  margin-left: 1rem;
 }
 
 .news h2,
@@ -386,7 +388,7 @@ body {
 }
 
 .single-news {
-  width: 27rem;
+  width: 26.5rem;
   margin: 1rem;
 }
 
@@ -424,7 +426,6 @@ body {
 .rounds-container {
   flex-wrap: wrap;
   justify-content: center;
-  width: 65%;
   margin: 0 auto;
 }
 
@@ -496,9 +497,11 @@ body {
 }
 
 .single-round {
-  width: 23%;
-  margin: 0.4rem;
-  padding: 1.5rem;
+  width: 27rem;
+}
+
+.single-round:not(:last-child) {
+  margin-right: 0.7rem;
 }
 
 .round-top {
@@ -748,15 +751,15 @@ body {
 /* ----------------------- Latest Section ------------------------ */
 
 .latest {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 6rem 0;
 }
 
 .single-latest {
-  width: 27rem;
-  margin: 1rem;
+  width: 25.7rem;
+}
+
+.single-latest:not(:last-child) {
+  margin-right: 3.7rem;
 }
 
 .latest-container {
@@ -770,7 +773,6 @@ body {
 .lates-top,
 .latest-bottom {
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .latest-img-box {
@@ -911,6 +913,18 @@ body {
     margin: 0.2rem;
   }
 
+  .single-latest {
+    width: 26.6rem;
+  }
+
+  .single-latest:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .single-latest:not(:first-child) {
+    margin-left: 2.7rem;
+  }
+
   .hidding {
     display: none;
   }
@@ -960,10 +974,31 @@ body {
     border-right: 2px solid rgba(0, 0, 0, 0.1);
   }
 
-  .news h2 {
+  .news-title {
+    justify-content: center;
+  }
+
+  .news-title h2 {
     align-self: center;
     margin-left: 0;
   }
+
+  .latest-title {
+    flex-direction: column;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  .lates-top, .latest-bottom {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+  }
+  .single-latest:not(:first-child) {
+    margin-left: 0;
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
