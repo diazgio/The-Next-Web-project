@@ -989,16 +989,16 @@ body {
     align-items: center;
   }
 
-  .lates-top, .latest-bottom {
+  .lates-top,
+  .latest-bottom {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    
   }
+
   .single-latest:not(:first-child) {
     margin-left: 0;
   }
-
 }
 
 @media only screen and (max-width: 900px) {
