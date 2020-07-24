@@ -816,6 +816,63 @@ body {
     text-decoration: underline;
 }
 
+/*--------------------Footer-------------------------*/
+
+.footer-top {
+    background-color: var(--color-header);
+    padding: 4.2rem 0 2.8rem 0;
+}
+
+.footer-icons {
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons i {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-icons i::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: rgba(255,255,255,0.1) 2px solid;
+    z-index: 3;
+}
+
+.footer-icons i:hover::after {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: black;
+    padding: 3.9rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 1.4rem;
+    color: rgba(255,255,255, 0.6);
+    margin-left: 0.5rem;
+}
+
+.footer-bottom a {
+    margin-left: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
 /* ----------------- Media Queries ----------------- */
 
 @media only screen and (max-width: 1590px) {
