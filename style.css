@@ -873,6 +873,22 @@ body {
     text-decoration: none;
 }
 
+.footer-links {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgba(255,255,255, 0.5);
+    padding: 0 1.2rem;
+    font-size: 1.2rem;
+}
+
+.footer-links a:hover {
+    color: white;
+}
 /* ----------------- Media Queries ----------------- */
 
 @media only screen and (max-width: 1590px) {
