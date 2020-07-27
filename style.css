@@ -202,7 +202,7 @@ body {
 .toggle__icon::after {
   width: 3rem;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: orangered;
   display: inline-block;
 }
 
@@ -978,7 +978,7 @@ body {
   .main {
     width: 100%;
   }
-  
+
   .rounds-title {
     display: flex;
     margin: 0 auto;
@@ -996,7 +996,7 @@ body {
   }
 
   .single-round {
-    width:  23rem;
+    width: 23rem;
     margin: 0.2rem;
   }
 
@@ -1094,7 +1094,7 @@ body {
     margin-bottom: 3rem;
     font-size: 4rem;
   }
-  
+
   .rounds-links {
     flex-direction: column;
   }
@@ -1124,8 +1124,19 @@ body {
     display: none;
   }
 
+  .latest-title {
+    margin: 0 4.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
   .single-latest {
-    width: 70%;
+    width: 36rem;
+    margin: 0 1rem;
+  }
+
+  .single-latest:not(:first-child) {
+    margin-left: 2rem;
   }
 
   .latest-img-box {
@@ -1146,30 +1157,6 @@ body {
 
   .navbar-nav__nav-item {
     display: none;
-  }
-
-  .navbar-right {
-    margin-right: 7rem;
-  }
-
-  .search-btn {
-    border-right: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .latest-title {
-    margin-bottom: 1rem;
-    align-items: center;
-  }
-
-  .lates-top,
-  .latest-bottom {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .single-latest:not(:first-child) {
-    margin-left: 0;
   }
 
   .sticky-button {
@@ -1210,10 +1197,18 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
+  .search-btn {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-right {
+    margin-right: 7rem;
+  }
+
   .grid-header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 50rem);
+    grid-template-rows: repeat(3, 35rem);
     margin: 0.7rem;
     gap: 0.7rem;
   }
@@ -1283,8 +1278,27 @@ body {
     grid-row: 8 / 9;
   }
 
+  .single-round {
+    width: 91%;
+    margin-bottom: 3rem;
+  }
+
+  .single-popular {
+    width: 100%;
+    margin: 2rem;
+  }
+
+  .latest-title {
+    width: 92%;
+    margin-left: 2rem;
+  }
+
+  .lates-top {
+    margin-bottom: 0;
+  }
+
   .single-latest {
-    width: 60%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     align-self: flex-start;
@@ -1311,5 +1325,12 @@ body {
   .single-news p,
   .single-latest p {
     font-size: 1.4rem;
+  }
+
+  .footer-bottom-width {
+    width: 50%;
+    margin: 0 auto !important;
+    text-align: center;
+    font-size: 2rem !important;
   }
 }
