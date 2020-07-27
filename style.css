@@ -996,7 +996,7 @@ body {
   }
 
   .single-round {
-    width:  23rem;
+    width: 23rem;
     margin: 0.2rem;
   }
 
@@ -1094,7 +1094,7 @@ body {
     margin-bottom: 3rem;
     font-size: 4rem;
   }
-  
+
   .rounds-links {
     flex-direction: column;
   }
