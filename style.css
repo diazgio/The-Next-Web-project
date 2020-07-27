@@ -436,6 +436,13 @@ body {
   z-index: 10;
 }
 
+.sticky-button i {
+  font-size: 3rem;
+  color: white;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
 .news h2 i,
 .popular-title h2 i,
 .latest-title h2 i {
@@ -965,13 +972,6 @@ body {
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
 }
 
-.sticky-button i {
-  font-size: 3rem;
-  color: white;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
 /* ----------------- Media Queries ----------------- */
 
 @media only screen and (max-width: 1150px) {
@@ -1032,17 +1032,13 @@ body {
   .rounds-title {
     display: flex;
     margin: 0 auto;
-    margin-left: 1rem;
-  }
-
-  .rounds-title {
-    flex-direction: column;
     margin-left: 5.5%;
+    flex-direction: column;
   }
 
   .rounds-links {
     width: 100%;
-    margin-left: -2rem;
+    margin: -2rem 0 2rem -2rem;
   }
 
   .rounds-container {
