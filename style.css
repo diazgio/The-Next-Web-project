@@ -1159,6 +1159,15 @@ body {
     display: none;
   }
 
+  .round-top-first h3 {
+    margin-left: 3rem;
+  }
+
+  .round-top-second h4, 
+  .round-top-second p {
+    margin-left: 3rem;
+  }
+
   .sticky-button {
     border-radius: 0;
     left: 100%;
