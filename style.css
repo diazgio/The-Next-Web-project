@@ -560,7 +560,7 @@ body {
 }
 
 .single-round {
-  width: 27rem;
+  width: 23rem;
 }
 
 .single-round:not(:last-child) {
@@ -676,11 +676,11 @@ body {
 }
 
 .single-popular {
-  width: 36rem;
+  width: 30rem;
 }
 
 .single-popular:not(:last-child) {
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
 
 .popular-top {
@@ -689,7 +689,7 @@ body {
 
 .popular-img-box {
   width: 100%;
-  height: 30rem;
+  height: 22rem;
   background-size: cover;
 }
 
@@ -818,12 +818,12 @@ body {
 }
 
 .single-latest {
-  width: 25.7rem;
+  width: 22rem;
   margin-bottom: 3rem;
 }
 
 .single-latest:not(:last-child) {
-  margin-right: 3.7rem;
+  margin-right: 2.5rem;
 }
 
 .latest-container {
