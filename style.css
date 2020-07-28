@@ -1260,7 +1260,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .main {
     width: 100%;
   }
@@ -1286,7 +1286,6 @@ body {
     display: none;
   }
 
-  /* ---------- News 3 columns ------------ */
   .news {
     width: 90%;
   }
@@ -1345,10 +1344,6 @@ body {
     grid-row: 3 / 4;
   }
 
-  .single-news {
-    width: 38rem;
-  }
-
   .rounds-title p {
     margin-bottom: 3rem;
     font-size: 4rem;
@@ -1365,10 +1360,6 @@ body {
 
   .rounds-links a:not(:last-child) {
     border-right: 1px solid transparent;
-  }
-
-  .single-round {
-    width: 36rem;
   }
 
   .hidding {
@@ -1418,44 +1409,10 @@ body {
     border-radius: 0;
     left: 100%;
   }
-}
+} */
 
-@media only screen and (min-width: 768px) {
-  .header {
-    font-size: 1.2rem;
-  }
 
-  .header-item i {
-    font-size: 1.2rem;
-  }
-
-  .navbar-nav > * {
-    padding: 0 2rem !important;
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
-  }
-
-  .navbar-nav__nav-item {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-nav__link:link,
-  .navbar-nav__link:visited {
-    margin: 0 0;
-    font-size: 1.2rem;
-  }
-
-  .navbar-nav__toggle {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 767px) {
   .grid-header {
     display: grid;
     grid-template-columns: 1fr;
@@ -1647,3 +1604,39 @@ body {
     font-size: 2rem !important;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 1.2rem;
+  }
+
+  .header-item i {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav > * {
+    padding: 0 2rem !important;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  .navbar-nav__nav-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav__link:link,
+  .navbar-nav__link:visited {
+    margin: 0 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav__toggle {
+    display: none;
+  }
+}
+
