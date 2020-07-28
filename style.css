@@ -58,7 +58,7 @@ body {
 /* ----------------- Navbar Section ----------------- */
 .navbar {
   background-color: white;
-  width: 100% !important;
+  width: 100%;
   height: 5rem;
   justify-content: space-between;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.3);
@@ -1086,12 +1086,10 @@ body {
     width: 100%;
   }
 
-   /* ------- Logo White -------- */
-   .logo-box-white {
+  /* ------- Logo White -------- */
+  .logo-box-white {
     display: none;
   }
-
-  /* -------------------- News Section --------------------- */
 
   /* ---------- News 3 columns ------------ */
   .news {
@@ -1411,8 +1409,80 @@ body {
   }
 } */
 
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 1.2rem;
+  }
+
+  .header-item i {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav > * {
+    padding: 0 2rem !important;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  .navbar-nav__nav-item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav__link:link,
+  .navbar-nav__link:visited {
+    margin: 0 0;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav__toggle {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+
+  .navbar {
+    position: fixed;
+  }
+
+  .logo-box {
+    display: block;
+  }
+
+  .navbar-nav__nav-item {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .navbar-nav__link:link,
+  .navbar-nav__link:visited {
+    font-size: 1.2rem;
+  }
+
+  .search-btn {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-right {
+    margin-right: 7rem;
+  }
+
+  .header {
+    display: none;
+  }
+
+  /* --------------- Outside Main ---------------- */
   .grid-header {
     display: grid;
     grid-template-columns: 1fr;
@@ -1438,7 +1508,7 @@ body {
 
   /* -------------------- News Section -------------------- */
   .single-news {
-    width: 95vw;
+    width: 80%;
   }
 
   .news-container {
@@ -1487,10 +1557,10 @@ body {
     grid-row: 8 / 9;
   }
 
-   /* --------- Rounds Section --------- */
-   .rounds-title {
+  /* --------- Rounds Section --------- */
+  .rounds-title {
     margin: 0 auto;
-    margin-left: 4%;
+    margin-left: 2rem;
     flex-direction: column !important;
     margin-bottom: -3rem;
   }
@@ -1531,7 +1601,7 @@ body {
   }
 
   .single-round {
-    width: 90vw;
+    width: 80%;
     margin-bottom: 3rem;
   }
 
@@ -1543,7 +1613,7 @@ body {
   }
 
   .single-popular {
-    width: 90vw;
+    width: 90%;
     margin: 2rem;
   }
 
@@ -1603,40 +1673,9 @@ body {
     text-align: center;
     font-size: 2rem !important;
   }
-}
 
-@media only screen and (min-width: 768px) {
-  .header {
-    font-size: 1.2rem;
-  }
-
-  .header-item i {
-    font-size: 1.2rem;
-  }
-
-  .navbar-nav > * {
-    padding: 0 2rem !important;
-    cursor: pointer;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
-  }
-
-  .navbar-nav__nav-item {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar-nav__link:link,
-  .navbar-nav__link:visited {
-    margin: 0 0;
-    font-size: 1.2rem;
-  }
-
-  .navbar-nav__toggle {
-    display: none;
+  .sticky-button {
+    border-radius: 0;
+    left: 100%;
   }
 }
-
