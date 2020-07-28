@@ -1027,6 +1027,23 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  
+  .toggle__icon,
+  .toggle__icon::before,
+  .toggle__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: orangered;
+    display: inline-block;
+  }
+
+  .search-btn {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-right {
+    margin-right: 7rem;
+  }
   /* ---------- News 3 columns ------------ */
   .news {
     width: 90%;
@@ -1197,14 +1214,6 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-  .search-btn {
-    border-right: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar-right {
-    margin-right: 7rem;
-  }
-
   .grid-header {
     display: grid;
     grid-template-columns: 1fr;
