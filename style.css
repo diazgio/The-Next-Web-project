@@ -496,6 +496,26 @@ body {
   grid-row: 2 / 3;
 }
 
+.round-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.round-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.round-3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.round-4 {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
 .rounds-title {
  justify-content: space-between;
  align-items: baseline;
@@ -519,26 +539,6 @@ body {
   padding: 0 2rem;
   text-decoration: none;
   margin-top: 4rem;
-}
-
-.round-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.round-2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.round-3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-.round-4 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
 }
 
 .rounds-title p i {
@@ -995,12 +995,11 @@ body {
 }
 
 /* ----------------- Media Queries ----------------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .main {
     width: 100%;
   }
-  .news {
-  }
+  
   .single-news h2 {
     margin-left: 0;
   }
@@ -1010,6 +1009,78 @@ body {
     margin: 0 0.8rem;
   }
 
+  .rounds-title {
+    flex-direction: column;
+  }
+
+  .rounds-links a:not(:last-child) {
+    border-right: 1px solid transparent;
+  }
+
+  /* ---------- Rounds Section----------- */
+  .rounds-section {
+    justify-content: start;
+  }
+
+  .rounds-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+  
+  .round-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .round-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .round-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  .round-4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: none;
+  }
+
+  .rounds-p {
+    margin-left: 2rem;
+  }
+
+  .single-round {
+    width: 27vw;
+    margin: 0 2rem;
+  }
+
+  /* ---------- Most Popular Section----------- */
+  .single-popular {
+    width: 30vw;
+    margin: 0 0.7rem;
+  }
+
+  /* ---------- Latest Section----------- */
+  .latest-container {
+    margin-left: 3rem;
+  }
+
+  .latest-title {
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 93%;
+  }
+
+  .single-latest {
+    width: 20vw;
+  }
+
+  .hide {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
