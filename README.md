@@ -16,7 +16,7 @@
 
 ## 🔴 Live Demo
 
-[Live Demo Link](https://raw.githack.com/diazgio/The-Next-Web-project/feature-branch/index.html)
+[Live Demo Link](https://diazgio.github.io/The-Next-Web-project/.)
 
 
 ## 🛠 Getting Started
