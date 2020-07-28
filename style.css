@@ -974,7 +974,7 @@ body {
 
 /* ----------------- Media Queries ----------------- */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1600px) {
   .main {
     width: 100%;
   }
