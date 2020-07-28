@@ -1027,7 +1027,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  
   .toggle__icon,
   .toggle__icon::before,
   .toggle__icon::after {
@@ -1044,6 +1043,7 @@ body {
   .navbar-right {
     margin-right: 7rem;
   }
+
   /* ---------- News 3 columns ------------ */
   .news {
     width: 90%;
